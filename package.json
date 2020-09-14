@@ -1,0 +1,52 @@
+{
+  "name": "maxadorable",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:8080",
+  "postinstall": "webpack ",
+  "homepage": "https://www.maxchakhmatov.com",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jquery": "^3.4.1",
+    "object-hash": "^2.0.3",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-dropdown": "^1.7.0",
+    "react-expand-collapse": "^0.2.0",
+    "react-fade-in": "^1.1.0",
+    "react-parallax": "^3.0.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.4.1",
+    "react-toggle": "^4.1.1",
+    "simple-parallax-js": "^5.2.0",
+    "universal-cookie": "^4.0.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "prod": "NODE_ENV=production node server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1",
+    "redux-devtools": "^3.5.0"
+  }
+}
