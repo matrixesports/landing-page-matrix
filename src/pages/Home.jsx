@@ -10,29 +10,14 @@ class Home extends React.Component {
     super(props);
     $('html, body').animate({ scrollTop: 0 }, 'fast');
 
-    this.state = {
-        value: '',
-        priority_number: '',
-        email_submitted: '',
-        ref_link: '',
-        error_info: ''
-    };
-
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-
 
   }
 
-  handleChange(event) {
-    this.setState({value: event.target.value});
-  }
 
-  handleSubmit(event) {
-    console.log('A name was submitted: ' + this.state.value);
-    event.preventDefault();
+  addEmailToWaitlist = (e) => {
+    e.preventDefault();
     var body = {
-        email: this.state.value,
+        email: document.getElementById('email_input').value,
         api_key: 'OUEH0D',
         referral_link: window.location.href
     };
@@ -40,18 +25,11 @@ class Home extends React.Component {
     axios.post('https://www.getwaitlist.com/waitlist', body)
       .then((response) => {
           console.log(response)
-          var registered_email = response['data']['registered_email']
-          var current_priority = response['data']['current_priority']
-          var referral_link = response['data']['referral_link']
-          this.setState({
-              email_submitted: registered_email,
-              priority_number: current_priority,
-              ref_link: referral_link
-          });
+          var registered_email = response['data']['registered_email'];
       })
       .catch((error) => {
-          this.setState({error_info: 'Some error occured unfortunately. Check your value or let me know'})
-          console.log(error.response);
+          this.setState({error_info: 'Some error occured unfortunately. Check your value or let me know: bani (at) banisingh.io'})
+          console.log(error.response)
       });
   }
 
@@ -78,13 +56,13 @@ class Home extends React.Component {
                   <div className="row">
                     <div className="col text-center">
                       <div className="group">
-                        <input type="text" placeholder={"ENTER EMAIL"} onChange={(e) => handleChange(e.target.value)}  />
+                        <input type="text" placeholder={"ENTER EMAIL"} id="email_input"/>
                         <span className="highlight" />
                         <span className="bar" />
                         <label></label>
                       </div>
 
-                      <a className="btn btn-mycolor btn-lg rounded-0 text-center" href="/" role="button" style={{ width: "100%", fontSize: "23px", fontFamily: 'Cabin' }} onClick={(e) => handleSubmit(e.target.value) }>JOIN WAITLIST</a>
+                      <a className="btn btn-mycolor btn-lg rounded-0 text-center" href="/" role="button" style={{ width: "100%", fontSize: "23px", fontFamily: 'Cabin' }} onClick={(e) => this.addEmailToWaitlist(e) }>JOIN WAITLIST</a>
                     </div>
                   </div>
                 </div>
