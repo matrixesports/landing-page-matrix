@@ -67,6 +67,7 @@ input 				{
   border-bottom:1px solid white;
   background: transparent;
   color: white;
+  font-family: 'Cabin', sans-serif;
 }
 input:focus 		{ outline:none; }
 
@@ -113,7 +114,7 @@ input:focus ~ label, input:valid ~ label 		{
 
 /* active state */
 input:focus ~ .bar:before, input:focus ~ .bar:after {
-  width:50%;
+  width:0%;
 }
 
 /* HIGHLIGHTER ================================== */

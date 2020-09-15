@@ -6,6 +6,7 @@
   "postinstall": "webpack ",
   "homepage": "https://www.maxchakhmatov.com",
   "dependencies": {
+    "axios": "^0.20.0",
     "express": "^4.17.1",
     "jquery": "^3.4.1",
     "object-hash": "^2.0.3",
@@ -28,7 +29,7 @@
     "eject": "react-scripts eject",
     "prod": "NODE_ENV=production node server.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "deploy": "gh-pages -b 45 -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
