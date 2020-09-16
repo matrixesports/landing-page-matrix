@@ -4,7 +4,7 @@ import { Link, Switch, Route } from 'react-router-dom';
 class Footer extends React.Component {
   render() {
     return (
-      <footer className="page-footer font-small stylish-color-dark" style={{backgroundColor: '#E8D0A7', marginTop: '0px', height: "40px", fontFamily: "Inter"}}>
+      <footer className="page-footer font-small stylish-color-dark" style={{backgroundColor: '#E8D0A7', marginTop: '0px', height: "40px", fontFamily: "Inter",position:'relative',zIndex:'1000',padding:10}}>
             <span style={{ float: "left"}}>
               Powered by Matrix
             </span>

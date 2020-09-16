@@ -1,0 +1,20 @@
+.joinButton{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+    cursor: pointer;
+}
+
+.fadeIn{
+    animation-name: fadeIn;
+    animation-duration: 200ms;
+}
+
+@keyframes fadeIn{
+    0%{
+        margin-top: 20px;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
