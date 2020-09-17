@@ -9,11 +9,11 @@ class Footer extends React.Component {
               Powered by Matrix
             </span>
             <span style={{ float: "right"}}>
-              <a href="discord.com" style={{ paddingRight: "5px" }}>
+              <a href="https://discord.gg/5kpA6vg" style={{ paddingRight: "5px" }}>
               Discord
               </a>
               |
-              <a href="instagram.com" style={{ paddingLeft: "5px" }}>
+              <a href="https://instagram.com/teamx_spark" style={{ paddingLeft: "5px" }}>
                Instagram
               </a>
             </span>
