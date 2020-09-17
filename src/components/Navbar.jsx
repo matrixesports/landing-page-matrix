@@ -22,7 +22,7 @@ class Navbar extends React.Component {
     return (
       <nav className="navbar navbar-dark bg-dark custom-bg">
         <a className="navbar-brand" href="/">
-          <img src={ require("../images/Xspark.png") } width={30} height={30} className="d-inline-block align-top" alt="" />
+          <img src={ require("../images/xspark.jpg") } width={30} height={30} className="d-inline-block align-top" alt="" />
           Team XSparK
         </a>
       </nav>
