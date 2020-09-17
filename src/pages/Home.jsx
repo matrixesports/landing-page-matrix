@@ -86,7 +86,7 @@ const Home = ()=>{
         {confirmedEmail&&<>
           <div className='text-center mt-5 fadeIn' style={{fontFamily:'Inter',position:'absolute',top:'50%',left:'50%',width:'90%',zIndex:'1000',transform:'translate(-50%,-50%)'}}>
             <h1 style={{color:'white'}}>Thank you!</h1>
-            <p className='text-secondary'>Your email {confirmedEmail} had been added to our waitlist.</p>
+            <p className='text-secondary'>Your email {confirmedEmail} has been added to our waitlist. Make sure to join the Discord at https://discord.gg/5kpA6vg!</p>
           </div>
         </>}
       </div>
