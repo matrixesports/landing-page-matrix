@@ -47,11 +47,11 @@ const Home = ()=>{
                 <div style={{ width: "100%", margin: "0 auto", height: "50px" }}>
                   <hr style={{ width: "30%", float: "left", minWidth: "100px", height: "2px", backgroundColor: "white" }} />
                 </div>
-                <p style={{ textAlign: "left", fontFamily: "Inter"}}>Earn additional XSparK shares by completing tasks</p>
+                <p style={{ textAlign: "left", fontFamily: "Inter"}}>Earn additional XSparK tokens by completing tasks</p>
                 <div style={{ width: "100%", margin: "0 auto", height: "50px" }}>
                   <hr style={{ width: "30%", float: "left", minWidth: "100px", height: "2px", backgroundColor: "white" }} />
                 </div>
-                <p style={{ textAlign: "left", fontFamily: "Inter" }} >Trade and send shares with other fans</p>
+                <p style={{ textAlign: "left", fontFamily: "Inter" }} >Trade and send tokens with other fans</p>
                 <div style={{ width: "100%", margin: "0 auto", height: "50px" }}>
                   <hr style={{ width: "30%", float: "left", minWidth: "100px", height: "2px", backgroundColor: "white" }} />
                 </div>
