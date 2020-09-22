@@ -42,7 +42,7 @@ const Home = ()=>{
           <div style={{position:'relative',minHeight:'100vh'}}>
             <div className="jumbotron text-white rounded-0 " style={{ background: "#1c1b1b", margin: "0 auto", position:'relative',minHeight:'100vh',zIndex:'1000'}}>
               <div style={{position:'relative',zIndex:'100'}}>
-                {!confirmedEmail&&<><h1 className="display-4" style={{ fontFamily: "Raleway", fontWeight: "500"}}>Become An XSparK Shareholder</h1>
+                {!confirmedEmail&&<><h1 className="display-4" style={{ fontFamily: "Raleway", fontWeight: "500"}}>Join the XSparK Dynasty</h1>
                 <p style={{ fontFamily: "Inter"}}>Recieve a portion of any XSparK prize pool</p>
                 <div style={{ width: "100%", margin: "0 auto", height: "50px" }}>
                   <hr style={{ width: "30%", float: "left", minWidth: "100px", height: "2px", backgroundColor: "white" }} />
